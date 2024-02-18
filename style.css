@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+}
+h1, h2{
+  margin: 0;
+}
+.container {
+  max-width: 1600px;
+  padding: 0px 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* Header */
+.header {
+  border-bottom: 1px solid hsl(236, 82%, 63%);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.header__container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.header__avatar img {
+  border-radius: 50%;
+  width: 200px;
+}
+/* Main */
+
+.s-lessons {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.s-lessons__title {
+  font-size: 48px;
+}
+.list-lesson {
+  list-style-type: disclosure-closed;
+  flex-direction: column;
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+.list-lesson__link {
+  transition: all .3s linear;
+  text-decoration: none;
+  color: #3300ec;
+  font-weight: 600;
+  font-size: 28px;
+}
+.list-lesson__link:hover {
+  color: rgb(64, 147, 255);
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #000013;
+  padding: 30px 0 50px 0;
+  color: #fff;
+}
+.footer__container {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+}
+.footer__year {
+  align-self: center;
+  font-weight: bold;
+  font-size: 20px;
+}
