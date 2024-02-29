@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	padding-left: 54px;
+	padding-right: 54px;
+}
+section {
+	padding: 100px 0px;
+}
+h2 {
+	font-family: "Russo One", sans-serif;
+}
+.logo {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 350px;
+}
+.nav__list {
+	list-style-type: none;
+	display: flex;
+}
+.nav__link {
+	transition: all 0.3s linear;
+	text-transform: uppercase;
+	cursor: url('./images/cursor.png') ,pointer;
+	margin: 15px 25px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	color: #047681;
+	display: block;
+	border: 2px solid transparent;
+	text-decoration: none;
+	font-weight: 600;
+}
+.nav__link:hover {
+	border-color: #fee3de; 
+	color: #fee3de;
+	background-color: #047681;
+}
+.s-reminder__list,
+.s-my-films__list,
+.s-my-music__list {
+	margin-top: 20px;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+}
+.s-reminder__list {
+	align-self: flex-start;
+	list-style-type: upper-roman;
+	color: #047681;
+	background-color: #42cbf5;
+	list-style-position: inside;
+	font-size: 30px;
+	width: fit-content;
+	border-radius: 8px;
+	padding: 10px;
+}
+.s-my-films {
+	align-self: center;	
+	list-style-image: url('./images/face_point.png');
+}
+.s-my-music {
+	align-self: flex-end;	
+	list-style-image: url('./images/hands_point.png');
+}
+.s-my-films__list {
+	list-style-position: inside;
+}
+.s-my-films__item {
+	transition: all 0.3s linear;
+	background-color: #047681;
+	font-family: "Comfortaa", sans-serif;
+}
+.s-my-films__item:hover {
+	color: #fff;
+	cursor: pointer;
+} 
+.s-my-music__item {
+	transition: all 0.3s linear;
+	background-color: #ce42f5;
+	font-family: "Micro 5", sans-serif;
+}
+.s-my-music__item:hover {
+	color: #fff;
+	font-size: 34px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.s-my-films__item,
+.s-my-music__item {
+	margin-top: 10px;
+	border-radius: 8px;
+	font-size: 28px;
+	padding: 10px;
+}
