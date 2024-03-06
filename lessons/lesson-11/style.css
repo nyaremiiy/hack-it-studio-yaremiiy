@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.dark-yellow {
+  color: #dbc817;
+}
+.orange {
+  color: #db6517;
+}
+.violet{
+  color: #5217db;
+}
+.pink{
+  color: #db17a0;
+}
+.dark-blue{
+  color: #1509bd;
+}
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header__top {
+  justify-content: space-between;
+  background-color: #ceddf3;
+  display: flex;
+  padding: 15px 30px;
+}
+.header__top p {
+  font-family: 'Anta', sans-serif;
+  font-size: 22px;
+}
+.header__exit {
+  cursor: pointer;
+  font-size: 50px;
+}
+.header__bottom {
+  background-image: linear-gradient(to top left, #e2e8f1, #89a9ca);
+  align-items: center;
+  padding: 10px 30px;
+  display: flex;
+  gap: 15px;
+}
+.header__info {
+  align-self: flex-start;
+}
+.header__name-chat {
+  font-size: 22px;
+  font-weight: 600;
+}
+.header__users {
+  font-size: 14px;
+  color: #63636b;
+}
+.chat {
+  padding: 15px 30px;
+  background-color: #7bb4ec;
+  background-image: url('./images/chat_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 180px;
+}
+.chat__wrapper {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.date,
+.add-user {
+  background-color: #ceddf3;
+  width: fit-content;
+  align-self: center;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: #63636b;
+  font-weight: 500;
+}
+/* Message */
+.message {
+  background-color: #e8f0ff;
+  max-width: 800px;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 8px 18px;
+  display: flex;
+  gap: 8px;
+}
+.message__smile {
+  width: 16px;
+}
+.message__time {
+  align-self: flex-end;
+  color: #89a9ca;
+}
+.message__name {
+  font-weight: 500;
+  font-size: 18px;
+}
+/* .bg-img-ry {
+  background-image: url('./images/snitch.jpg');
+  background-repeat: repeat-y;
+  background-position: 50px 0px;
+} */
+.message--me {
+  align-self: flex-end;
+}
+/* .bg-img-rx {
+  background-image: url('./images/harry_1.jpg');
+  background-repeat: repeat-x;
+  background-position: 0px 100%;
+} */
