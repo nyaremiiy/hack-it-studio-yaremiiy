@@ -34,7 +34,7 @@ h1, h2{
 }
 /* Main */
 
-.s-lessons {
+.s-lessons, .s-grades {
   padding-bottom: 80px;
   padding-top: 80px;
 }
@@ -58,6 +58,18 @@ h1, h2{
 .list-lesson__link:hover {
   color: rgb(64, 147, 255);
   text-decoration: underline;
+}
+
+.s-grades__link {
+  background-color: #05053d;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /* Footer */
