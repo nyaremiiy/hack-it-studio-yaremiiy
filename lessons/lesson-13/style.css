@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Permanent Marker", cursive;
+}
+section {
+  padding: 90px 30px;
+}
+/* Header */
+.header {
+  background-image: url('./images/africa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 30px;
+}
+.header__wrapper {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+}
+.header__title {
+  color: #0fc508;
+  font-size: 100px;
+  text-shadow: -5px -4px 2px #333;
+  border-bottom: 10px double;
+}
+/* Секція Info */
+.info {
+  display: flex;
+  gap: 20px;
+  background-image: linear-gradient(90deg, rgba(198,215,26,1) 0%, rgba(180,131,58,1) 100%);
+}
+.info__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-left: 10px dotted  #6e2102;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+.content__item:nth-child(1) {
+  align-self: flex-start;
+  border-radius: 50%;
+}
+.content__item:nth-child(2) {
+  align-self: center;
+  border-radius: 0 50%  50%  50%;
+}
+.content__item:nth-child(3) {
+  align-self: flex-end;
+  border-radius: 0 50%;
+}
+.content__item {
+  background-color: #0fc508;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #6e2102;
+  box-shadow: 0px 5px 8px  #444;
+}
+/* Fenok */
+.fenok {
+  display: flex;
+  gap: 20px;
+  background-image: linear-gradient(90deg, rgba(198,215,26,1) 0%, rgba(167,221,46,1) 100%);
+}
+.fenok__text {
+  flex-grow: 2;
+  align-self: center;
+  color: #c54d08;
+  border-style: solid;
+  border-image-width: 40px;
+  border-image-source: url('./images/foot_frame.png');
+  border-image-slice: 40;
+  border-image-repeat: round;
+  font-size: 20px;
+  padding:100px;
+  text-indent: 15px;
+}
+/* Footer */
+.footer {
+  padding: 160px 30px;
+  background-image: url('./images/bottom_fox.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__text {
+  font-size: 30px;
+  display: inline-block;
+  padding: 80px;
+  color: #fff;
+  text-shadow: 3px 3px 2px #333;
+  border: solid 10px;
+  border-image: linear-gradient(90deg, rgba(213,231,64,1) 0%, rgba(229,207,240,1) 100%);
+  border-image-slice: 20;
+}
+.footer__text span {
+  font-size: 70px;
+}
