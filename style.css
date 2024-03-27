@@ -42,18 +42,33 @@ h1, h2{
   font-size: 48px;
 }
 .list-lesson {
-  list-style-type: disclosure-closed;
-  flex-direction: column;
+  list-style-type: none;
   margin-top: 30px;
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.list-lesson__item {
+  width: calc((100% - 20px) / 3);
+  background-color: #004225;
+  padding: 20px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out ;
+}
+.list-lesson__item:hover {
+  transform: scale(1.02);
 }
 .list-lesson__link {
   transition: all .3s linear;
   text-decoration: none;
-  color: #3300ec;
+  color: #ffffff;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.no {
+  text-decoration: line-through;
 }
 .list-lesson__link:hover {
   color: rgb(64, 147, 255);
